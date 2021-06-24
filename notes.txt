@@ -1,0 +1,6 @@
+1. HTML is white Space collapsing Language. i.e. no matter how many spaces we give in between the words, it will only count it as one space.
+2. Dummy Text = Lorem Ipsum Text. Type lorem to get it. To get the lorem with specific number of words ==> lorem100.
+3. CTRL + Space = To get back the emmet suggestion.
+4. High Quality Copywright Images ===> Pexels, pixabay, Unsplash.
+5. Line break in HTML ===> <br>. Best Practice is to do it with CSS.
+6. The hr tag draws a horizontal line after the above content.

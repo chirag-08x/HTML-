@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- action = "Where the form value goes on submitting, we can either use any Form Online service which will retrieve back to us the data entered in the form or we can also setup our own backend server, which will do our work." -->
+
+    <!-- method = "POST OR GET" , a Way to send data-->
+
+    <!-- name = "" Whatever we passed in the name corresponding to that form column, whatever value was enetered in the column, that value will be stored corresponding to name in the backend. For example ==>  <input type="text" name="TextBox">, now whatever text will be written in the textField, that text will hold it's value under the TextBox i.e. name Column in backend-->
+
+    <!-- id = "", id value is used to set up the label for that form column. -->
+
+    <!-- value = "", value will be a default value that will be written inside the form column by default, so first we have to erase that value and then write in the new value for that column -->
+
+    <!-- placeholder = "", placeholder is also the default value for a form column, but as we start typing it automatically goes away. -->
+
+
+    <form>
+                            <!-- Text Type Input -->
+        <label for="first">First Name:</label>
+        <input type="text" name="firstName" id="first" value="firstname">
+        <br>
+        <br>
+        <label for="last">Last Name:</label>
+        <input type="text" name="lastName" id="last" placeholder="lastname">
+        <br>
+        <br>
+        <!-- Can also setup label like this, though label one is more preferable-->
+        School Name:<input type="text" name="School name" placeholder="SchoolName">
+        <br>
+        <br>
+
+                            <!-- Password type Input -->
+        <label for="pass">Enter Password:</label>
+        <input type="password" name="pass" id="pass" placeholder="password">
+        <br>
+        <br>
+
+                            <!-- Email Type Input -->
+        <label for="mail">Enter Email:</label>
+        <input type="email", name="email", placeholder="email@email.com" id="mail">
+        <br>
+        <br>
+
+                            <!-- TextArea Type Input -->
+        <label for="text">Please share your feedback</label>
+        <br>
+        <textarea name="feedback" id="text" cols="30" rows="10"></textarea>
+        <br>
+        <br>
+
+        
+                                                    <!-- Radio buttons -->
+        <!-- In backend server, the value that is given in the value attribute that is going to be stored in the server, not the one that we are selecting during filling up the form -->
+
+        <!-- The name of all the radio columns should be the same, otherwise we will be able to select multiple radio buttons at once, which is not a property of a typical radio button. -->
+
+        <!-- The checked attribute will check a radio button by default. -->
+        <label for="radio">Please select your favorite coding Language</label>
+        <br>
+        <input type="radio" name="favlang" id="radio" value="Python" checked>Python
+        <input type="radio" name="favlang" id="radio" value="JS">Javascript
+        <input type="radio" name="favlang" id="radio" value="cpp">C++
+        <br>
+        <br>        
+
+                                                <!-- CheckBoxes -->
+        <!-- In the name attribute we can pass the same values, since it's a checkbox we can still select multiple values. -->
+        <label for="oop">Which is an Object Oriented Language?</label>
+        <br>
+        <input type="checkbox" name="OOP" id="oop"  value="python">Python
+        <input type="checkbox" name="OOP" id="oop" value="cpp">C++
+        <input type="checkbox" name="OOP" id="oop" value="JS">Javascript
+        <input type="checkbox" name="OOP" id="oop" value="java" checked>Java
+        <br>
+        <br>
+
+                                    <!-- Select Button i.e. Drop Down menus -->
+        <label for="SELECT">Which of the Following is not a Programming Language ?</label>
+        <br>
+        <select name="languages" id="SELECT">
+            <option value="cpp">C++</option>
+            <option value="JS">Javascript</option>
+            <option value="java">Java</option>
+            <option value="html">HTML</option>
+        </select>
+        <br>
+        <br>
+        
+                                        <!-- Submit Type input and buttons -->
+        <!-- <input type="submit" value="Submit Here"> -->
+                    <!-- OR  -->
+        <button type="submit">Submit Here</button>
+    </form>
+</body>
+</html>
